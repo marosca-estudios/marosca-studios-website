@@ -1,9 +1,9 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import theme from 'global/theme'
 
 const ANIMATION_SPEED = 0.2
 
-export const StyledLink = styled.a`
+export const Link = styled.a`
   position: relative;
   cursor: pointer;
 
@@ -32,7 +32,6 @@ export const StyledLink = styled.a`
     position: absolute;
     top: 50%;
     left: 50%;
-    color: white;
   }
 
   :hover {
@@ -47,5 +46,12 @@ export const StyledLink = styled.a`
       transform: translate(-10%, -0%);
     }
   }
+`
 
+export const H1 = styled.h1`
+  padding: 0;
+  margin: 0;
+  color: ${theme.colors.WHITE};
+  font-size: 3.6rem;
+  font-weight: 900;
 `
