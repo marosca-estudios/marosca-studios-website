@@ -18,7 +18,7 @@ export const StyledLink = styled.a`
     pointer-events: none;
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 10%;
     right: 0;
     color: ${theme.colors.PRIMARY};
     overflow: hidden;
@@ -33,9 +33,6 @@ export const StyledLink = styled.a`
     top: 50%;
     left: 50%;
     color: white;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
   }
 
   :hover {
@@ -47,7 +44,7 @@ export const StyledLink = styled.a`
 
     .original {
       opacity: 0;
-      transform: translate(-50%, -0%);
+      transform: translate(-10%, -0%);
     }
   }
 
