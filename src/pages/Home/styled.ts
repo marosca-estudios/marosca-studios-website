@@ -9,9 +9,11 @@ export const Wrapper = styled.div`
 `
 
 export const NavWrapper = styled.div`
-  position: relative;
+  position: absolute;
   display: flex;
   width: 100%;
+  height: 10rem;
+  z-index: ${theme.zIndices.NAVBAR};
 `
 
 export const Nav = styled.nav`
@@ -22,39 +24,3 @@ export const Nav = styled.nav`
   margin: 5rem;
 `
 
-export const Section = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 100vh;
-`
-
-export const Content = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-`
-
-export const AbsoluteContent = styled.div`
-  position: absolute;
-  top: calc(50% - 25rem);
-  left: 10rem;
-  width: 50%;
-
-`
-
-export const Slogan = styled.h3`
-  line-height: 10rem;
-  font-size: 6rem;
-`
-
-export const Text = styled.h4`
-  font-size: 2.6rem;
-  line-height: 4rem;
-  top: calc(50% - 5rem);
-`

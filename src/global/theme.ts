@@ -16,5 +16,8 @@ export default {
 
     PRIMARY: '#00bed0',
     PRIMARY_DARK: "#009DAF",
+  },
+  zIndices: {
+    NAVBAR: 1,
   }
 }

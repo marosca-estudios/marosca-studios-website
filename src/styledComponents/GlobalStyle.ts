@@ -5,6 +5,13 @@ import theme from 'global/theme'
 export default createGlobalStyle`
   ${normalize()}
 
+  ::selection {
+    background: ${theme.colors.PRIMARY}; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: ${theme.colors.PRIMARY}; /* WebKit/Blink Browsers */
+  }
+
   html {
     font-size: 62.5%;
   }
@@ -22,9 +29,5 @@ export default createGlobalStyle`
     overflow-x: hidden;
 
     font-size: 1.6rem;
-
-    &, button, input, option, select, textarea {
-    }
   }
 `
-
