@@ -1,7 +1,6 @@
 import styled, { css, keyframes } from 'styled-components'
 import { mqMax, mqMin } from 'utils/mediaQuery'
 import theme from 'global/theme'
-import img1 from './images/img1.jpg'
 
 const slogan = keyframes`
   from { opacity: 0; transform: translate(50px, 0px) }
@@ -24,18 +23,7 @@ export const Section = styled.section`
   height: 100vh;
   position: relative;
 
-  ::before {
-    content: "";
-    background: url(${img1});
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; height: 100%;
-    filter: brightness(40%) contrast(100%);
-
-    animation: ${background} ease 2s;
-  }
+  animation: ${background} ease 2s;
 `
 
 export const ContentWrapper = styled.div`

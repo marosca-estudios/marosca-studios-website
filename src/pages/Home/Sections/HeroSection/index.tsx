@@ -1,5 +1,6 @@
 import React from 'react'
 import theme from 'global/theme'
+import BackgroundSlideshow from 'components/BackgroundSlideshow'
 import {
   Section,
   ContentWrapper,
@@ -8,22 +9,26 @@ import {
   Text,
   Triangle,
 } from './styled'
+import img1 from './images/img1.jpg'
+import img2 from './images/img2.jpg'
 
 const HeroSection = () =>  (
   <Section>
-    <Triangle />
-    <Triangle orientation="bottom" />
-    <ContentWrapper>
-      <Content>
-        <Slogan>
-          <span>Fast</span>&nbsp; blazing apps built with&nbsp;
-          <span>fast</span>&nbsp; blazing tech.
-        </Slogan>
-        <Text>
-          We deliver elite engineered products for those with big visions.
-        </Text>
-      </Content>
-    </ContentWrapper>
+    <BackgroundSlideshow images={[img1, img2]}>
+      <Triangle />
+      <Triangle orientation="bottom" />
+      <ContentWrapper>
+        <Content>
+          <Slogan>
+            <span>Fast</span>&nbsp; blazing apps built with&nbsp;
+            <span>fast</span>&nbsp; blazing tech.
+          </Slogan>
+          <Text>
+            We deliver elite engineered products for those with big visions.
+          </Text>
+        </Content>
+      </ContentWrapper>
+    </BackgroundSlideshow>
   </Section>
 );
 

@@ -7,6 +7,7 @@ import {
 } from './styled'
 import HeroSection from './Sections/HeroSection'
 import theme from 'global/theme'
+import config from 'global/config'
 
 const Home = () => {
 
@@ -15,7 +16,7 @@ const Home = () => {
       <NavWrapper>
         <Nav>
           <Logo>
-            MAROSCA STUDIOS
+            {config.app.name.toUpperCase()}
           </Logo>
           <></>
         </Nav>
