@@ -1,4 +1,7 @@
 import React from 'react'
+import theme from 'global/theme'
+import config from 'global/config'
+import Hamburguer from 'components/Hamburguer'
 import Logo from 'styledComponents/Logo'
 import {
   Wrapper,
@@ -6,8 +9,6 @@ import {
   Nav,
 } from './styled'
 import HeroSection from './Sections/HeroSection'
-import theme from 'global/theme'
-import config from 'global/config'
 
 const Home = () => {
 
@@ -18,7 +19,7 @@ const Home = () => {
           <Logo>
             {config.app.name.toUpperCase()}
           </Logo>
-          <></>
+          <Hamburguer />
         </Nav>
       </NavWrapper>
       <HeroSection />

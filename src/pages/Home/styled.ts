@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import theme from 'global/theme'
+import { mqMax } from 'utils/mediaQuery'
 
 export const Wrapper = styled.div`
   display: flex;
@@ -22,5 +23,14 @@ export const Nav = styled.nav`
   justify-content: space-between;
   width: 100%;
   margin: 5rem;
-`
 
+  ${mqMax.mobile} {
+    margin: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    
+    * {
+      margin-right: 1rem;
+    }
+  }
+`

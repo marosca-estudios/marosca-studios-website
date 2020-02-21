@@ -19,5 +19,6 @@ export default {
   },
   zIndices: {
     NAVBAR: 1,
+    MINIMAL: 1,
   }
 }

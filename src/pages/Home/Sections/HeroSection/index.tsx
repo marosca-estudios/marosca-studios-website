@@ -9,12 +9,11 @@ import {
   Text,
   Triangle,
 } from './styled'
-import img1 from './images/img1.jpg'
-import img2 from './images/img2.jpg'
+import images from './images'
 
 const HeroSection = () =>  (
   <Section>
-    <BackgroundSlideshow images={[img1, img2]}>
+    <BackgroundSlideshow images={images}>
       <Triangle />
       <Triangle orientation="bottom" />
       <ContentWrapper>

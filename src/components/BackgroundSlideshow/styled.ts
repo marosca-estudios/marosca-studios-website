@@ -22,7 +22,7 @@ const getCurrentKeyframe = (index: number, count: number) => keyframes`
 `
 
 const getAnimation = (index: number, count: number) => css`
-  animation: ${getCurrentKeyframe(index, count)} 12s linear infinite;
+  animation: ${getCurrentKeyframe(index, count)} 15s linear infinite;
 `
 
 type P = {
