@@ -26,7 +26,6 @@ const Home = () => {
       </NavWrapper>
       <Section>
         <Content>
-
           <AbsoluteContent>
             <Slogan>
               <span style={{ borderBottom: '1rem solid', borderBottomColor: theme.colors.PRIMARY}}>
