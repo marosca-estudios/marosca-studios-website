@@ -14,7 +14,6 @@ const Hamburguer = () => {
       <Bar index={2} active={isOpen} />
     </Container>
   )
-
 }
 
 export default Hamburguer

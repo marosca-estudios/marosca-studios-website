@@ -28,7 +28,7 @@ export const Nav = styled.nav`
     margin: 1.5rem;
     justify-content: center;
     align-items: center;
-    
+
     * {
       margin-right: 1rem;
     }
