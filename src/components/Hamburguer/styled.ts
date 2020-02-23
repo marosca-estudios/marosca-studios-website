@@ -8,6 +8,7 @@ export const Container = styled.button`
   background: none;
   height: 5rem;
   outline: none;
+  z-index: ${theme.zIndices.ABOVE_MODAL};
 `
 
 const getAnimation = (index: number) => {

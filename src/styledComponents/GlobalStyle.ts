@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 import { normalize } from 'polished'
 import theme from 'global/theme'
+import { mqMax } from 'utils/mediaQuery'
 
 export default createGlobalStyle`
   ${normalize()}
@@ -29,5 +30,15 @@ export default createGlobalStyle`
     overflow-x: hidden;
 
     font-size: 1.6rem;
+
+    .overflowHidden {
+      overflow: hidden;
+      position: fixed;
+
+      ${mqMax.desktop} {
+        overflow: initial;
+        position: initial;
+      }
+    }
   }
 `

@@ -18,7 +18,9 @@ export default {
     PRIMARY_DARK: "#009DAF",
   },
   zIndices: {
-    NAVBAR: 1,
     MINIMAL: 1,
+    MODAL: 500,
+    ABOVE_MODAL: 501,
+    NAVBAR: 501, // We want the navbar to appear above the modal so we get a cool overlay effect
   }
 }
