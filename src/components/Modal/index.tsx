@@ -18,11 +18,12 @@ class Modal extends React.Component<Props, {}> {
   constructor(props: Props) {
     super(props)
 
+    this.escapeListener = this.escapeListener.bind(this);
     this.close = this.close.bind(this)
   }
 
   componentDidMount() {
-    document.addEventListener('keydown', this.close)
+    document.addEventListener('keydown', this.escapeListener);
 
     const { body } = document
     if (body) {
@@ -31,12 +32,18 @@ class Modal extends React.Component<Props, {}> {
   }
 
   componentWillUnmount() {
-    document.removeEventListener('keydown', this.close)
+    document.removeEventListener('keydown', this.escapeListener);
 
     const { body } = document
 
     if (body) {
       body.classList.remove('overflowHidden')
+    }
+  }
+
+  escapeListener(event: KeyboardEvent) {
+    if (event.code === 'Escape') {
+      this.close();
     }
   }
 

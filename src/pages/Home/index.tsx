@@ -4,6 +4,7 @@ import {
   Wrapper,
 } from './styled'
 import HeroSection from './Sections/HeroSection'
+import AboutUs from './Sections/AboutUs'
 
 const Home = () => {
 
@@ -11,6 +12,7 @@ const Home = () => {
     <Wrapper>
       <Navbar />
       <HeroSection />
+      <AboutUs />
     </Wrapper>
   )
 }

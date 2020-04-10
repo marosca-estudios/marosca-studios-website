@@ -32,7 +32,7 @@ const getAnimation = (index: number) => {
   }
 }
 
-type P = {
+type Props = {
   active: boolean,
   index: number,
 }
@@ -46,5 +46,5 @@ export const Bar = styled.div`
 
   transition: 0.4s;
 
-  ${(p: P) => p.active && getAnimation(p.index)};
+  ${(p: Props) => p.active && getAnimation(p.index)};
 `
