@@ -1,33 +1,14 @@
 import React from 'react'
-import theme from 'global/theme'
-import BackgroundSlideshow from 'components/BackgroundSlideshow'
 import {
   Section,
-  ContentWrapper,
-  Content,
-  Slogan,
-  Text,
-  Triangle,
+  TopBar,
 } from './styled'
 import images from './images'
+import theme from 'global/theme'
 
 const AboutUs = () =>  (
   <Section>
-    <BackgroundSlideshow images={images}>
-      <Triangle />
-      <Triangle orientation="bottom" />
-      <ContentWrapper>
-        <Content>
-          <Slogan>
-            <span>Fast</span>&nbsp; blazing apps built with&nbsp;
-            <span>fast</span>&nbsp; blazing tech.
-          </Slogan>
-          <Text>
-            We deliver elite engineered products for those with big visions.
-          </Text>
-        </Content>
-      </ContentWrapper>
-    </BackgroundSlideshow>
+    <TopBar />
   </Section>
 );
 

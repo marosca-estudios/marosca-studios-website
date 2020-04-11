@@ -1,6 +1,11 @@
-import styled from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 import theme from 'global/theme'
 import { mqMax } from 'utils/mediaQuery'
+
+const navbarFixed = keyframes`
+  from { opacity: 0; transform: translate(-50px, 0px) }
+  to   { opacity: 1; transform: translate(0)}
+`
 
 export const NavWrapper = styled.div`
   position: absolute;
@@ -16,10 +21,34 @@ export const Nav = styled.nav`
   justify-content: space-between;
   width: 100%;
   margin: 5rem;
+  position: relative;
+  
+  align-items: center;
+
+ ${(p: { isFixed: boolean }) => p.isFixed && css`
+    position: fixed;
+    background: ${theme.colors.DARK};
+    margin: 0rem;
+    padding: 1rem 2rem;
+
+    animation: ${navbarFixed};
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
+ `};
+
+  
 
   ${mqMax.mobile} {
     margin: 1.5rem;
     justify-content: space-around;
     align-items: center;
+
+    ${(p: { isFixed: boolean }) => p.isFixed && css`
+      margin: 0rem;
+  `};
+
+
+
   }
 `

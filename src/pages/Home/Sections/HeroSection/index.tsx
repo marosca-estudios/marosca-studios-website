@@ -1,5 +1,4 @@
 import React from 'react'
-import theme from 'global/theme'
 import BackgroundSlideshow from 'components/BackgroundSlideshow'
 import {
   Section,
@@ -23,7 +22,7 @@ const HeroSection = () =>  (
             <span>fast</span>&nbsp; blazing tech.
           </Slogan>
           <Text>
-            We deliver elite engineered products for those with big visions.
+            Delivering elite engineered products for those with big visions.
           </Text>
         </Content>
       </ContentWrapper>
