@@ -17,7 +17,7 @@ const Service = ({
       <SubTitle dark>{serviceTitle}</SubTitle>
     </Header>
     <Content>
-      {services.map(service => <ServiceTile service={service} /> )}
+      {services.map((service, index) => <ServiceTile service={service} key={index} /> )}
     </Content>
   </Wrap>
 )

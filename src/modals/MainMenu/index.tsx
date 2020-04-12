@@ -25,20 +25,16 @@ const links = [
   },
 ]
 
-const MainMenu = () => {
-
-
-  return (
-    <Container>
-      <StyledUl>
-        {links.map(link =>
-          <StyledLi>
-            <Link href={link.href}>{link.name}</Link>
-          </StyledLi>
-        )}
-      </StyledUl>
-    </Container>
-  )
-}
+const MainMenu = () => (
+  <Container>
+    <StyledUl>
+      {links.map(link =>
+        <StyledLi>
+          <Link href={link.href}>{link.name}</Link>
+        </StyledLi>
+      )}
+    </StyledUl>
+  </Container>
+)
 
 export default MainMenu

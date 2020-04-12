@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 import theme from 'global/theme'
 import { MouseEventHandler } from 'react'
 import { unselectable } from 'styledComponents/Common'
+import { mqMax } from 'utils/mediaQuery'
 
 type WrapProps = {
   isActive: boolean,
@@ -43,6 +44,11 @@ export const Wrap = styled.div<WrapProps>`
   outline: none;
   transition: 0.5s ease all;
 
+  ${mqMax.desktopLarge} {
+    height: 8rem;
+    width: 8rem;
+    margin: 6rem;
+  }
 `
 
 export const Content = styled.div`
@@ -58,5 +64,12 @@ export const Content = styled.div`
   min-width: 10rem;
 
   ${unselectable};
+
+  
+  ${mqMax.desktopLarge} {
+    min-width: 15rem;
+    border-top: .1rem solid ${theme.colors.DARK};
+    justify-content: flex-start;
+  }
 `
 

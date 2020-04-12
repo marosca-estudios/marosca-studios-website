@@ -4,6 +4,8 @@ import { Wrap, Content } from './styled'
 import { Paragraph } from 'styledComponents/Typography'
 import Desktop from 'components/Desktop'
 import Mobile from 'components/Mobile'
+// @ts-ignore
+import Zoom from 'react-reveal/Zoom';
 
 type Props = {
   service: ServiceType,
@@ -25,18 +27,20 @@ const ServiceTile = ({ service }: Props) => {
   )
 
   return (
-    <Fragment>
-      <Desktop>
-        <Wrap isActive={isActive} onMouseEnter={() => setIsActive(true)} onMouseLeave={() => setIsActive(false)}>
-          {content()}
-        </Wrap>
-      </Desktop>
-      <Mobile>
-        <Wrap isActive={isActive} onClick={() => setIsActive(!isActive)}>
-          {content()}
-        </Wrap>
-      </Mobile>
-    </Fragment>
+    <Zoom>
+      <Fragment>
+        <Desktop>
+          <Wrap isActive={isActive} onMouseEnter={() => setIsActive(true)} onMouseLeave={() => setIsActive(false)}>
+            {content()}
+          </Wrap>
+        </Desktop>
+        <Mobile>
+          <Wrap isActive={isActive} onClick={() => setIsActive(!isActive)}>
+            {content()}
+          </Wrap>
+        </Mobile>
+      </Fragment>
+    </Zoom>
   )
 }
 

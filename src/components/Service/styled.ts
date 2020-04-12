@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import theme from 'global/theme'
+import { mqMax } from 'utils/mediaQuery'
 
 export const Wrap = styled.div`
   display: flex;
@@ -30,4 +31,8 @@ export const Content = styled.div`
   justify-content: space-evenly;
   flex-grow: 1;
   flex-wrap: wrap;
+
+  ${mqMax.desktopLarge} {
+    margin-bottom:  8rem;
+  }
 `
