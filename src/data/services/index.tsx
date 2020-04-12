@@ -118,5 +118,11 @@ export const backend: ServiceType[] = [
     order: 3,
     description: "Our defacto way of bridging client apps with our APIs, it lets us build light-weight responses to produce faster apps.",
   },
+  {
+    displayName: 'POSTGRES SQL',
+    icon: postgres,
+    order: 4,
+    description: "Our db of choice. Open source, object-relational, performant and with a great community backing it up."
+  }
 ].sort((prev, cur) => prev.order - cur.order)
 

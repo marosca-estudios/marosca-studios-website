@@ -13,23 +13,21 @@ export const Wrap = styled.div`
   align-items: center;
 `
 
+export const Header = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  align-items:  flex-end;
+
+  justify-content: center;
+` 
+
 export const Content = styled.div`
   display: flex;
   flex-direction: row;
-  width: 100%;
-  margin-top: 10rem;
   align-items: center;
   justify-content: space-evenly;
-  height: 40rem;
-`
-
-export const Grid = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+  flex-grow: 1;
   flex-wrap: wrap;
-  flex: 1 1 20rem;
 `

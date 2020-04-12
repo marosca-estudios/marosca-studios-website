@@ -2,7 +2,7 @@ import React from 'react'
 import { ServiceType } from 'data/services/types'
 import { SubTitle } from 'styledComponents/Typography'
 import ServiceTile from './ServiceTile'
-import { Wrap, Content, Grid } from './styled'
+import { Wrap, Header, Content } from './styled'
 
 type Props = {
   serviceTitle: string,
@@ -13,11 +13,11 @@ const Service = ({
   services
 }: Props) => (
   <Wrap>
-    <SubTitle dark>{serviceTitle}</SubTitle>
+    <Header>
+      <SubTitle dark>{serviceTitle}</SubTitle>
+    </Header>
     <Content>
-      <Grid>
       {services.map(service => <ServiceTile service={service} /> )}
-      </Grid>
     </Content>
   </Wrap>
 )

@@ -9,3 +9,9 @@ export const StyledSection = styled.section`
   position: relative;
 `
 
+export const unselectable = `  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+`

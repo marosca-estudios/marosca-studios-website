@@ -3,7 +3,6 @@ import theme from 'global/theme'
 
 /** Receveis a color string and attempts to find a match in the global theme colors object  */
 const getColor = (color: Object): string => {
-  // Attempt to extract a color
   const { colors } = theme
   const { keys, values } = Object
 

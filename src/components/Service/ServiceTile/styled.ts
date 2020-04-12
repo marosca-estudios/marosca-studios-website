@@ -1,11 +1,13 @@
 import styled, { css } from 'styled-components'
 import theme from 'global/theme'
 import { MouseEventHandler } from 'react'
+import { unselectable } from 'styledComponents/Common'
 
 type WrapProps = {
   isActive: boolean,
-  onMouseEnter: MouseEventHandler<any>,
-  onMouseLeave: MouseEventHandler<any>;
+  onMouseEnter?: MouseEventHandler<any>,
+  onMouseLeave?: MouseEventHandler<any>,
+  onClick?: MouseEventHandler<any>,
 }
 
 export const Wrap = styled.div<WrapProps>`
@@ -16,8 +18,7 @@ export const Wrap = styled.div<WrapProps>`
   justify-content: center;
   align-items: center;
 
-  height: 100%;
-  max-height: 10rem;
+  height: 10rem;
   width: 10rem;
   margin: 0 1rem;
   border: none;
@@ -32,27 +33,30 @@ export const Wrap = styled.div<WrapProps>`
 
   ${(p) => p.isActive && css`
     background: ${theme.colors.PRIMARY};
-
     svg {
       opacity: 0;
       position: absolute;
       transition: 0.5s ease all;
-
     }
-    
   `};
 
   outline: none;
-
   transition: 0.5s ease all;
+
 `
 
 export const Content = styled.div`
+  position: absolute;
   display: flex;
   width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  text-align: center;
+  min-width: 10rem;
+
+  ${unselectable};
 `
 
