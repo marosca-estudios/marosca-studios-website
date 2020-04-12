@@ -4,7 +4,7 @@ import {
   Wrapper,
 } from './styled'
 import HeroSection from './Sections/HeroSection'
-import AboutUs from './Sections/AboutUs'
+import Services from './Sections/Services'
 
 const Home = () => {
 
@@ -12,7 +12,7 @@ const Home = () => {
     <Wrapper>
       <Navbar />
       <HeroSection />
-      <AboutUs />
+      <Services />
     </Wrapper>
   )
 }

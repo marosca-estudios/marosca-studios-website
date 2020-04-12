@@ -35,6 +35,8 @@ export const Nav = styled.nav`
     animation-duration: 1s;
     animation-iteration-count: 1;
 
+    border-bottom: .5rem solid ${theme.colors.PRIMARY};
+
  `};
 
   

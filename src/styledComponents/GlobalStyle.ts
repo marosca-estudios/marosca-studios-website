@@ -7,10 +7,10 @@ export default createGlobalStyle`
   ${normalize()}
 
   ::selection {
-    background: ${theme.colors.PRIMARY}; /* WebKit/Blink Browsers */
+    background: ${theme.colors.DARK}; /* WebKit/Blink Browsers */
   }
   ::-moz-selection {
-    background: ${theme.colors.PRIMARY}; /* WebKit/Blink Browsers */
+    background: ${theme.colors.DARK}; /* WebKit/Blink Browsers */
   }
 
   html {

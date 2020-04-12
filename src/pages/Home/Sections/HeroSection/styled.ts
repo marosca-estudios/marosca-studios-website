@@ -63,10 +63,6 @@ export const Slogan = styled.h3`
     line-height: 10rem;
     font-size: 6rem;
     margin-bottom: 4rem;
-
-    span {
-      border-bottom: 1rem solid ${theme.colors.PRIMARY};
-    }
   }
 
   /* Mobile */
@@ -75,10 +71,6 @@ export const Slogan = styled.h3`
     font-size: 3.8rem;
     line-height: 6rem;
     margin-bottom: 1rem;
-
-    span {
-      border-bottom: 0.5rem solid ${theme.colors.PRIMARY};
-    }
   }
 `
 
