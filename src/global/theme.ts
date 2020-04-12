@@ -16,6 +16,8 @@ export default {
 
     PRIMARY: '#e77562',
     PRIMARY_DARK: "#009DAF",
+
+    MIDIKREW_PRIMARY:'#22b2e8',
   },
   zIndices: {
     MINIMAL: 1,

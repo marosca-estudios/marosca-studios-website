@@ -39,8 +39,6 @@ export const Nav = styled.nav`
 
  `};
 
-  
-
   ${mqMax.mobile} {
     margin: 1.5rem;
     justify-content: space-around;
@@ -49,8 +47,16 @@ export const Nav = styled.nav`
     ${(p: { isFixed: boolean }) => p.isFixed && css`
       margin: 0rem;
   `};
+  }
+`
 
+export const NavbarActions = styled.div`
+  display: flex;
+  flex-direction: row;
 
-
+  ${mqMax.mobile} {
+    * {
+      margin-left: 1rem;
+    }
   }
 `

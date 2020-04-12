@@ -9,6 +9,8 @@ export const Link = styled.a`
 
   min-height: 4rem;
 
+  text-decoration: none;
+
   .original {
     pointer-events: none;
     transition: ${ANIMATION_SPEED}s ease all;

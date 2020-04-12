@@ -25,31 +25,29 @@ const renderList = (x: string) => (
   <Item fontSize={3}>{x}</Item>
 )
 
-const AboutUs = () =>  (
-  <Animation>
-  <StyledSection>
-    <Row>
-      <EmptyBar />
-      <ServiceCardWrapper>
-        <Service serviceTitle="FRONTEND" services={frontend} />
-      </ServiceCardWrapper>
+const Services = () =>  (
+    <StyledSection id="services">
+      <Row>
+        <EmptyBar />
+        <ServiceCardWrapper>
+          <Service serviceTitle="FRONTEND" services={frontend} />
+        </ServiceCardWrapper>
 
-      <MiddleCard>
-          <Title primary>SERVICES</Title>
-          <SubTitle primary>- What we do -</SubTitle>
+        <MiddleCard>
+            <Title primary>SERVICES</Title>
+            <SubTitle primary>- What we do -</SubTitle>
 
-          <List>
-            {list.map(x => renderList(x))}
-          </List>
-      </MiddleCard>
+            <List>
+              {list.map(x => renderList(x))}
+            </List>
+        </MiddleCard>
 
-      <ServiceCardWrapper>
-        <Service serviceTitle="BACKEND" services={backend} />
-      </ServiceCardWrapper>
-      <EmptyBar />
-    </Row>
-  </StyledSection>
-  </Animation>
+        <ServiceCardWrapper>
+          <Service serviceTitle="BACKEND" services={backend} />
+        </ServiceCardWrapper>
+        <EmptyBar />
+      </Row>
+    </StyledSection>
 );
 
-export default AboutUs
+export default Services

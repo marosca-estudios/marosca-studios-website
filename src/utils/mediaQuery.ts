@@ -4,6 +4,7 @@ const { breakpoints } = config
 const { keys, values } = Object
 
 type Mq = {
+  desktopExtraLarge: string,
   desktopLarge: string,
   desktop: string,
   mobile: string,

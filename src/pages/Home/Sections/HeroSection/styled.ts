@@ -91,7 +91,7 @@ export const Text = styled.h4`
     justify-content: center;
     margin-top: 0;
     line-height: 3rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 `
 

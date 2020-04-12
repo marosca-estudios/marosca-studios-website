@@ -1,12 +1,18 @@
 import styled from 'styled-components'
+import theme from 'global/theme'
 
-export const StyledSection = styled.section`
+export const StyledSection =  styled.section<{
+  backgroundColor?: string,
+}>`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
+
+  background: ${p => p.backgroundColor || `${theme.colors.DARK}`};
+
 `
 
 export const unselectable = `  

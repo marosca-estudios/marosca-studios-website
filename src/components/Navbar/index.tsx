@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useRef } from 'react'
+import React, { useState, useCallback, useEffect, useRef, Fragment } from 'react'
 import config from 'global/config'
 import Hamburguer from 'components/Hamburguer'
 import Modal from 'components/Modal'
@@ -7,8 +7,9 @@ import Logo from 'styledComponents/Logo'
 import {
   NavWrapper,
   Nav,
+  NavbarActions,
 } from './styled'
-
+import ScrollToTop from 'components/ScrollToTop'
 
 const OFFSET = 1.5
 
@@ -48,14 +49,20 @@ const Navbar = () => {
           <Logo>
             {config.app.name.toUpperCase()}
           </Logo>
-          <Hamburguer
-            isOpen={isOpen}
-            setIsOpen={setIsOpen}
-          />
+
+          <NavbarActions>
+            {!isOpen && showFixedNavbar &&
+              <ScrollToTop />
+            }
+            <Hamburguer
+              isOpen={isOpen}
+              setIsOpen={setIsOpen}
+            />
+          </NavbarActions>
         </Nav>
       </NavWrapper>
       <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
-        <MainMenu />
+        <MainMenu onClose={() => setIsOpen(false)} />
       </Modal>
     </>
   )

@@ -6,6 +6,7 @@ export const Row = styled.div`
   display: flex;
   height: 100%;
   width: 100%;
+  min-height: inherit;
   flex-direction: row;
 
   ${mqMax.desktopLarge} {
@@ -16,6 +17,7 @@ export const Row = styled.div`
 export const ServiceCardWrapper = styled.div`
   display: flex;
   width: 35%;
+  min-height: 100%;
 
   ${mqMax.desktopLarge} {
     width: 100%;
@@ -26,7 +28,7 @@ export const MiddleCard = styled.div`
   display: flex;
   flex-direction: column;
 
-  height: 100%;
+  min-height: 100vh;
   width: 20%;
 
   background: ${theme.colors.DARK};

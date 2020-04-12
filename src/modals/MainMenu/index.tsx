@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useCallback } from 'react'
 import {
   Container,
   StyledUl,
@@ -25,16 +25,28 @@ const links = [
   },
 ]
 
-const MainMenu = () => (
-  <Container>
-    <StyledUl>
-      {links.map(link =>
-        <StyledLi>
-          <Link href={link.href}>{link.name}</Link>
-        </StyledLi>
-      )}
-    </StyledUl>
-  </Container>
-)
+type Props = {
+  onClose?: () => void,
+}
+
+const MainMenu = ({ onClose }: Props) => {
+  const handleClose = useCallback(() => {
+    if (onClose) {
+      onClose()
+    }
+  }, [onClose])
+
+  return (
+    <Container>
+      <StyledUl>
+        {links.map(link =>
+          <StyledLi>
+            <Link href={link.href} onClick={handleClose}>{link.name}</Link>
+          </StyledLi>
+        )}
+      </StyledUl>
+    </Container>
+  )
+}
 
 export default MainMenu

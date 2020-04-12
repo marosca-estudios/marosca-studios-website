@@ -7,7 +7,7 @@ type Props = {
 
 const Logo = ({ children }: Props) => {
   return (
-    <Link>
+    <Link href="#">
       <H1 className="original">{children}</H1>
       <H1 className="overlay">{children}</H1>
     </Link>
