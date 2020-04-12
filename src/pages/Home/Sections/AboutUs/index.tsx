@@ -6,7 +6,7 @@ import {
   ContainerWithText,
   Content, 
   Title, TextAboutUs, 
-  ImageAboutUs
+  ImageWeb
 } from './styled'
 import images from './images'
 import theme from 'global/theme'
@@ -19,15 +19,16 @@ const AboutUs = () =>  (
     <Container>
       <ContainerWithText>
         <Content>
-          <Title>Lovers of <br /> digital Narratives</Title>
+          <Title style={{fontSize: '60px'}}>Lovers of <br /></Title>
+          <Title style={{fontSize: '30px'}}>digital Narratives</Title>
           <TextAboutUs>
-            <b>We are a web development studio based in Lisbon.</b>
+            <TextAboutUs style={{fontWeight: "bold"}}> We are a web development studio based in Lisbon.</TextAboutUs>
             Our passion lies in empowering big-thinkers and bringing their ideas to life by
             providing full product-development, from wireframe to production.
           </TextAboutUs>
         </Content>
       </ContainerWithText>
-      <ImageAboutUs />
+      <ImageWeb src={images[0].src} />
     </Container>
   </StyledSection>
 );

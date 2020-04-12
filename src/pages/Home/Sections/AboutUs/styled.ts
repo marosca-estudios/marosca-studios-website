@@ -14,7 +14,6 @@ export const Section = styled.section`
 
 export const TopBar = styled.div`
   display: flex;
-  height: 10%;
   width: 100%;
 
   position: absolute;
@@ -23,25 +22,41 @@ export const TopBar = styled.div`
   background: ${theme.colors.SALMON};
 ` 
 export const Container = styled.div`
+  display: flex;
+  align-items: center;
   background: ${theme.colors.SALMON};
 `
 export const ContainerWithText = styled.div`
   display: flex;
-  content-align: center;
-  background:  ${theme.colors.BLACK};
+  flex: 1;
+  height: 65vh;
+  align-self: flex-end;
+  background:  ${theme.colors.DARK};
 `
 
 export const Content = styled.div`
+  width: 57%;
+  margin-left: 5%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
 `
 
-export const Title = styled.h1`
+export const Title = styled.text`
+  text-transform: uppercase;
   color:${theme.colors.SALMON};
+
 `
-export const TextAboutUs = styled.h4`
+export const TextAboutUs = styled.h3`
+  line-height: 1.5;
   color:${theme.colors.WHITE};
 `
 
-export const ImageAboutUs = styled.image`
-  src:
+export const ImageWeb = styled.img`
+  height: 67vh;
+  width: 54vh;
+  position: relative;
+  right: 4%;
+  top: 17%;
 `
 
