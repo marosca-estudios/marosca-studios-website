@@ -107,21 +107,27 @@ export const backend: ServiceType[] = [
     description: "Created to execute Javascript outside the browser, it has grown respectably for building complex, scalable APIs."
   },
   {
+    displayName: 'JAVA SPRING',
+    icon: java,
+    order: 2,
+    description: "A daily technology in our lives, we love writing APIs in Java, especially in a Spring environment.",
+  },
+  {
     displayName: 'NESTJS',
     icon: nestjs,
-    order: 2,
+    order: 3,
     description: "An opinated framework for Node JS ideal for both small and big server-side applications.",
   },
   {
     displayName: 'GRAPHQL',
     icon: graphql,
-    order: 3,
+    order: 4,
     description: "Our defacto way of bridging client apps with our APIs, it lets us build light-weight responses to produce faster apps.",
   },
   {
     displayName: 'POSTGRES SQL',
     icon: postgres,
-    order: 4,
+    order: 5,
     description: "Our db of choice. Open source, object-relational, performant and with a great community backing it up."
   }
 ].sort((prev, cur) => prev.order - cur.order)
