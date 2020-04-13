@@ -19,12 +19,12 @@ export const TopBar = styled.div`
   position: absolute;
   top: 0rem;
 
-  background: ${theme.colors.SALMON};
+  background: ${theme.colors.PRIMARY};
 ` 
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  background: ${theme.colors.SALMON};
+  background: ${theme.colors.PRIMARY};
 `
 export const ContainerWithText = styled.div`
   display: flex;
@@ -44,7 +44,7 @@ export const Content = styled.div`
 
 export const Title = styled.text`
   text-transform: uppercase;
-  color:${theme.colors.SALMON};
+  color:${theme.colors.PRIMARY};
 
 `
 export const TextAboutUs = styled.h3`
