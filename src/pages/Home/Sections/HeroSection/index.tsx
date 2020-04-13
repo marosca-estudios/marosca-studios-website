@@ -18,7 +18,7 @@ const HeroSection = () =>  (
       <ContentWrapper>
         <Content>
           <Slogan>
-           Fast blazing apps built with&nbsp;
+           Fast blazing apps built with
            fast blazing tech.
           </Slogan>
           <Text>

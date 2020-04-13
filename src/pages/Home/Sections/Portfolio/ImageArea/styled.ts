@@ -23,11 +23,10 @@ export const ImageWrap = styled.div<{
 }>`
   width: 100%;
 
-  
-
   ${mqMin.desktopExtraLarge} {
     position: absolute;
     width: 100rem;
+    margin-left: 5rem;
   }
 `
 

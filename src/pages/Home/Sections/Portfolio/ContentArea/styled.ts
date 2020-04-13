@@ -22,7 +22,7 @@ export const Wrap = styled.div<{
     height: 100%;
     min-width: unset;
     margin: 0;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     padding: 2rem;
     text-align: center;
 
@@ -46,11 +46,11 @@ export const Text = styled.p<{
 }>`
   color: ${p => p.textColor || theme.colors.WHITE};
   font-size: ${p => `${p.fontSize || 4}rem`};
+  margin: 2rem 0;
 
   ${mqMax.desktop} {
-    font-weigth: 200;
+    font-weight: 200;
     font-size: ${p => `${(p.fontSize || 4) - 0.5}rem`};
-
   }
 `
 
@@ -70,10 +70,21 @@ export const ButtonLink = styled.button<{
   border: none;
   min-width: 5rem;
   min-height: 5rem;
+  background: ${theme.colors.WHITE};
 
   svg {
     fill: ${theme.colors.DARK};
     width: 5rem;
     height: 5rem;
   }
+
+  &:hover {
+    background: ${theme.colors.DARK};
+    
+    svg {
+      fill: ${theme.colors.WHITE};
+    }
+  }
+
+  transition: 0.5s ease all;
 `

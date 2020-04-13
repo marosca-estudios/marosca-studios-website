@@ -15,7 +15,10 @@ export const NavWrapper = styled.div`
   z-index: ${theme.zIndices.NAVBAR};
 `
 
-export const Nav = styled.nav`
+export const Nav = styled.nav<{
+  isFixed: boolean,
+  isOpen: boolean,
+}>`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,7 +28,7 @@ export const Nav = styled.nav`
   
   align-items: center;
 
- ${(p: { isFixed: boolean }) => p.isFixed && css`
+ ${p => p.isFixed && css`
     position: fixed;
     background: ${theme.colors.DARK};
     margin: 0rem;
@@ -35,7 +38,7 @@ export const Nav = styled.nav`
     animation-duration: 1s;
     animation-iteration-count: 1;
 
-    border-bottom: .5rem solid ${theme.colors.PRIMARY};
+    border-bottom: ${p.isOpen ? 'none' : `.5rem solid ${theme.colors.PRIMARY}`};
 
  `};
 

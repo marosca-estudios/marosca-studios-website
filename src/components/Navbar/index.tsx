@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <>
       <NavWrapper ref={navbarRef}>
-        <Nav isFixed={!!showFixedNavbar}>
+        <Nav isFixed={!!showFixedNavbar} isOpen={isOpen}>
           <Logo>
             {config.app.name.toUpperCase()}
           </Logo>

@@ -15,7 +15,7 @@ export default {
     GRAY_LIGHTER: "#f6f8f9",
 
     PRIMARY: '#e77562',
-    PRIMARY_DARK: "#009DAF",
+    PRIMARY_DARK: "#bf6758",
 
     MIDIKREW_PRIMARY:'#22b2e8',
   },

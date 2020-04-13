@@ -31,6 +31,7 @@ export const Content = styled.div`
   justify-content: space-evenly;
   flex-grow: 1;
   flex-wrap: wrap;
+  max-width: 75%;
 
   ${mqMax.desktopLarge} {
     margin-bottom:  8rem;

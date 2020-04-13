@@ -14,7 +14,7 @@ type Props = {
 
 const ContentArea = ({ project }: Props) =>  (
   <Wrap>
-    <Text textColor={project.projectColors.logo} fontSize={6.5}>
+    <Text textColor={project.projectColors.logo} fontSize={8}>
       {project.projectName.toLocaleUpperCase()}
     </Text>
     
@@ -38,7 +38,7 @@ const ContentArea = ({ project }: Props) =>  (
 
     <LinkSection>
         {project.projectsLinks.map(x => (
-          <ButtonLink onClick={() => window.open(x.src, '_blank')} style={{ background: project.projectColors.links.background, color: project.projectColors.links.text }}>
+          <ButtonLink onClick={() => window.open(x.src, '_blank')}>
             {x.icon}
           </ButtonLink>
         ))}
